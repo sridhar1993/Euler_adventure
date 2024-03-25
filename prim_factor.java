@@ -27,7 +27,11 @@ public class prim_factor {
 					
 					for (int j = 0; j < temp.length; j++) {
 						System.out.println("temp value is:-" + temp[j]);
-//						  int maxNumber = temp[0];
+					}
+//						  //int maxNumber = temp[0];
+//						  System.out.println(temp[0]);
+					
+					//System.out.println(temp[i]);
 //
 //					        // Iterate through the array starting from the second element
 //						  for (int j = 1; j < temp.length; j++) {
@@ -42,4 +46,4 @@ public class prim_factor {
 			}
 		}
 	}
-}
+
