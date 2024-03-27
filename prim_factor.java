@@ -11,39 +11,25 @@ public class prim_factor {
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();
 		// int temp=0;
+		int max = 0;
+
 		for (int i = 1; i < n; i++) {
 			if ((n % i) == 0) {
 				int count = 0;
 				for (int k = 1; k <= i; k++) {
 					if (i % k == 0) {
+
 						count++;
 					}
 				}
 				if (count == 2) {
-					System.out.println("value of i is" + i);
-					// int temp =i;
-					// System.out.println("temp values are :-"+temp);
-					char[] temp = ("" + i).toCharArray();
-					
-					for (int j = 0; j < temp.length; j++) {
-						System.out.println("temp value is:-" + temp[j]);
-					}
-//						  //int maxNumber = temp[0];
-//						  System.out.println(temp[0]);
-					
-					//System.out.println(temp[i]);
-//
-//					        // Iterate through the array starting from the second element
-//						  for (int j = 1; j < temp.length; j++) {
-//					            if (temp[j] > maxNumber) {
-//					                maxNumber = temp[j];
-//					                System.out.println("The largest number in the array is: " + maxNumber);
-//					            }
-
-					}
-
+					System.out.println("Prime factors are:-" + i);
+					if (i > max)
+						max = i;
 				}
 			}
-		}
-	}
 
+		}
+		System.out.println("largest prime factor is: "+max);
+	}
+}
